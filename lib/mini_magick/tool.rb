@@ -123,6 +123,16 @@ module MiniMagick
     end
 
     ##
+    # Unshift
+    #
+    # @return [self]
+    #
+    def unshift(arg)
+      args.unshift arg.to_s
+      self
+    end
+
+    ##
     # Merges a list of raw options.
     #
     # @return [self]
